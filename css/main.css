@@ -1,0 +1,150 @@
+table { width: 100%; }
+th { text-align: left;}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th { background-color: #E9E9E9;}
+.in_progress, .done {
+  border: 2px solid;
+  border-radius: 3px;  
+  padding: .1em 0.4em;
+  font-weight: normal;
+  margin-left: .2em;
+  vertical-align: middle;
+  font-size: 0.9em;
+  padding-bottom: 0px;
+}
+
+.in_progress { color: #F31673; }
+.done { color: #26F42E; }
+.navbar { color: #F31673; text-align: center;}
+a { color: #FFCE51; }
+a:hover { color: #ffb700; }
+
+.navbar-inner {
+    min-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #000000;
+    background-image: linear-gradient(to bottom,  #000000,  #000000);
+    background-repeat: repeat-x;
+    border: 2px solid #FFCE51;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #bbbbbb;
+    background-color: #1a1919
+}
+
+@media print {
+    body { color: #000; }
+    .navbar, #intro, input[type="checkbox"], .done, .in_progress { display: none; }
+    a { color: #000; text-decoration: underline; }
+    a[href]:after { content: none !important; }
+    .tab-content > .tab-pane, .pill-content > .pill-pane { display: block; }
+    .tab-pane { page-break-after: always; }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 22px;
+}
+ul li ul {
+  padding-top: 0;
+}
+h3 {
+  font-size: x-large;
+  margin-bottom: 0;
+}
+.checkbox label,
+.radio label {
+  padding-left: 24px;
+}
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+  margin-left: -24px;
+}
+
+.table_of_contents {
+  margin-left: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.highlight {
+    background-color: rgb(255, 246, 18);
+}
+
+.hiddenfile {
+ width: 0px;
+ height: 0px;
+ overflow: hidden;
+}
+
+.btn.fadingbutton {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+  position: fixed;
+  display: none;
+  z-index: 1;
+  bottom: 0;
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+
+.btn-collapse {
+  padding: 4px 10px 1px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.btn:focus, .btn.active:focus {
+    outline: none;
+    outline: 0;
+}
+
+.btn-collapse:after {
+  font-family: 'Glyphicons Halflings';
+  content:"\e082";
+}
+
+.btn-collapse.collapsed:after {
+  content:"\e081";
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+body.hide_completed .completed {
+  display: none !important;
+}
+
+input[type="checkbox"]:checked + .item_content {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] ~ .glyphicon-eye-close,
+input[type="checkbox"] ~ * > .glyphicon-eye-close,
+input[type="checkbox"]:checked ~ .glyphicon-eye-open,
+input[type="checkbox"]:checked ~ * > .glyphicon-eye-open {
+  display: none;
+}
+input[type="checkbox"] ~ .glyphicon-eye-open,
+input[type="checkbox"] ~ * > .glyphicon-eye-open,
+input[type="checkbox"]:checked ~ .glyphicon-eye-close,
+input[type="checkbox"]:checked ~ * > .glyphicon-eye-close {
+  display: inline-block;
+}
+
+textarea#profileText {
+  height: 15em;
+  resize: vertical;
+}
+
